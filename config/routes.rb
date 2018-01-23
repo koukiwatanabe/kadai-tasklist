@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
-  get 'sessions/create'
-
-  get 'sessions/destroy'
 
   # 最初に飛ばされるところ
-  root to: 'toppages#index'
+  root to: 'tasks#index'
   
   # ログイン用のルーティング
   get 'login', to: 'sessions#new'
